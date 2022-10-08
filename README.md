@@ -1,4 +1,4 @@
-# megapet-shop
+# Omegapet-shop
  Proyecto Mega Pet Shop
 ## Clonar repositorio
 Para clonar el repositorio y poder trabajar de manera local utilice este comando 

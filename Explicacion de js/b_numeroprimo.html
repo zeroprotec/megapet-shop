@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número Primo</title>
+</head>
+<body>
+    <h3>
+        Programa para determinar si un número es primo o no...
+    </h3>
+    <h4>
+        Un número es primo, si es divisible por únicamente por 1 y por sí mismo.
+    </h4>
+
+    <script>
+
+        let numero, cont;
+
+        do{
+            cont = 0;
+            numero = parseInt(prompt("Digite un número entero (cero para terminar):", "6"));
+            for(let i = 1; i <= numero; i++){
+                modulo = numero % i;
+                document.write(`<br>El Número ${numero} / ${i} = ${numero/i}`);
+                if(modulo == 0){
+                    //cont = cont + 1;
+                    cont++;
+                }
+            }
+            if(cont == 2){
+                primo = " Es Primo";
+            }
+            else{
+                primo = "No Es Primo";
+            }
+
+            document.write(`<br>El Número ${numero} es divisible ${cont} veces...`);
+            document.write(`<br>El Número ${numero} ${primo}`);
+
+        }while(numero != 0);
+        
+        // Explicación Uso de document.write()
+        // for(let i = 1; i <= 6; i++){
+        //     document.write("<br>Hola Tripulantes")
+        //     document.write(`<br><h${i}>Título en h${i}</h${i}>`)
+        // }
+    </script>
+    
+</body>
+</html>

@@ -4,8 +4,8 @@
   "description": "Tienda Virtual de Mascotas",
   "main": "index.js",
   "scripts": {
-    "comentario":"test: echo Error: no test specified && exit 1",
-    "start":"nodemon"
+    "comentario": "test: echo Error: no test specified && exit 1",
+    "start": "nodemon"
   },
   "keywords": [
     "tienda",
@@ -16,7 +16,9 @@
   "author": "U31G5",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2"
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"

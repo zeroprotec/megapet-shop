@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "Tienda Virtual de Mascotas",
+  "main": "index.js",
+  "scripts": {
+    "comentario": "test: echo Error: no test specified && exit 1",
+    "start": "nodemon"
+  },
+  "keywords": [
+    "tienda",
+    "virtual",
+    "nodejs",
+    "backend"
+  ],
+  "author": "U31G5",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

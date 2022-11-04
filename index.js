@@ -62,11 +62,11 @@ router.delete('/apirest/proveedor/:id', controlProveedor.eliminar); // Delete
 // importar el controlador de productos => CRUD
 const controlProducto = require('./controllers/controlProducto');
 
-router.post('/apirest/producto/', controlProducto.crear); // Create
-router.get('/apirest/producto/', controlProducto.obtener); // Read
-router.get('/apirest/producto/:id', controlProducto.obtenerPorId); // Read
-router.put('/apirest/producto/:id', controlProducto.actualizar); // Update
-router.delete('/apirest/producto/:id', controlProducto.eliminar); // Delete
+router.post('/apirest/productos/', controlProducto.crear); // Create
+router.get('/apirest/productos/', controlProducto.obtener); // Read
+router.get('/apirest/productos/:id', controlProducto.obtenerPorId); // Read
+router.put('/apirest/productos/:id', controlProducto.actualizar); // Update
+router.delete('/apirest/productos/:id', controlProducto.eliminar); // Delete
 
 
 

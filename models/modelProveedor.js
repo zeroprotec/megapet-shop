@@ -16,5 +16,5 @@ const proveedorSchema = mongoose.Schema({
 });
 
 // exportar para utilizar en otros archivos o script
-module.exports = mongoose.model('Proveedor', proveedorSchema);
+module.exports = mongoose.model('proveedores', proveedorSchema);
 // utilizarlo en el controlador => CRUD

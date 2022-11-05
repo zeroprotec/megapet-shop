@@ -1,20 +1,20 @@
-
-
 // importar mongoose
 const mongoose = require('mongoose');
 
 // establecer el schema del document en la collection
 const proveedorSchema = mongoose.Schema({
-    id_prov : Number,
-    nombre_prov : String,
-    telefono_prov : Number,
-    direccion_prov : String,
-    ciudad_prov : String
+    id_factura : Number,
+    id_usuario : [mongoose.Types.ObjectId],
+    id_producto: [mongoose.Types.ObjectId],
+    tipo_compra : String,
+    fecha : Datetime,
+    hora : datetime,
+    Total : Number
 },
 {
     versionKey : false
 });
 
 // exportar para utilizar en otros archivos o script
-module.exports = mongoose.model('proveedores', proveedorSchema);
+module.exports = mongoose.model('facturas', proveedorSchema);
 // utilizarlo en el controlador => CRUD

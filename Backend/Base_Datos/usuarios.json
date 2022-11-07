@@ -1,0 +1,273 @@
+{  
+        "nombre":"Cristian cruz",
+        "cedula":"1022988238",
+        "contraseña":"1234",
+        "rol":"cliente",
+        "info_financiera":["efectivo","pse"],
+        "contacto":{
+            "telefono":"7730328",
+            "celular":"3008357805",
+            "correo":"caabondanocruz@misena.edu.co"
+        },
+        "ubicacion":{
+            "pais":"colombia",
+            "ciudad":"Bogota d.c",
+            "barrio":"valles de cafam",
+            "direcion":"Tranversal 14l #91b-05sur",
+            
+            "fecha":"2015-04-05"
+            
+        }
+}
+{
+    "nombre":"Cristina salgado",
+    "cedula":"1022988239",
+    "contraseña":"1234",
+    "rol":"cliente",
+    "info_financiera":["efectivo","pse"],
+    "contacto":{
+        "telefono":"7730327",
+        "celular":"3008357806",
+        "correo":"criscruz@misena.edu.co"
+    },
+    "ubicacion":{
+        "pais":"colombia",
+        "ciudad":"Bogota d.c",
+        "barrio":"porvenir",
+        "direcion":"Tranversal 14l #96b-05sur",
+        "fecha_ingreso":"2016-04-05"
+        
+    }
+
+}
+{
+    "nombre":"Daniela  Vasquez",
+    "cedula":"1022988249",
+    "contraseña":"1234",
+    "rol":"cliente",
+    "info__financiera":["efectivo","pse"],
+    "contacto":{
+        "telefono":"7730337",
+        "celular":"3008357816",
+        "correo":"danivascruz@misena.edu.co"
+    },
+    "ubicacion":{
+        "pais":"colombia",
+        "ciudad":"Bogota d.c",
+        "barrio":"santafe",
+        "direcion":"Tranversal 14l #96b-25sur",
+        "fecha_ingreso":"2010-04-05"
+        
+    }
+
+}
+{
+    "nombre":"jhon  churque",
+    "cedula":"1022988259",
+    "contraseña":"1234",
+    "rol":"cliente",
+    "info__financiera":["efectivo","pse"],
+    "contacto":{
+        "telefono":"7730367",
+        "celular":"3008357836",
+        "correo":"jhonchur@misena.edu.co"
+    },
+    "ubicacion":{
+        "pais":"colombia",
+        "ciudad":"Bogota d.c",
+        "barrio":"tenerife",
+        "direcion":"Tranversal 14l #96b-55sur",
+        "fecha_ingreso":"2011-04-05"
+        
+    }
+
+}
+{
+    "nombre":"Harrison Garzon",
+    "cedula":"1022988279",
+    "contraseña":"1234",
+    "rol":"cliente",
+    "info__financiera":["efectivo","pse"],
+    "contacto":{
+        "telefono":"7730347",
+        "celular":"3008357839",
+        "correo":"HarriGarzon@misena.edu.co"
+    },
+    "ubicacion":{
+        "pais":"colombia",
+        "ciudad":"Bogota d.c",
+        "barrio":"monteblanco",
+        "direcion":"Tranversal 15l #96b-25sur",
+        "fecha_ingreso":"2013-04-05"
+        
+    }
+
+}
+{
+    "nombre":"Solin  Torres",
+    "cedula":"1022988269",
+    "contraseña":"1234",
+    "rol":"cliente",
+    "info__financiera":["efectivo","pse"],
+    "contacto":{
+        "telefono":"7730458",
+        "celular":"3008357720",
+        "correo":"SolinTorres@misena.edu.co"
+    },
+    "ubicacion":{
+        "pais":"colombia",
+        "ciudad":"Bogota d.c",
+        "barrio":"marichuelo",
+        "direcion":"Tranversal 25l #96b-25sur",
+        "fecha_ingreso":"2015-04-05"
+    }
+
+}
+/*proveedores-----------------------------------------------------------------------------------------------------------*/
+
+{
+    "nombre":"MASCOTAS SAS",
+    "rut":"12345678",
+    "rol":"proveedor",
+    "contacto":{
+        "telefono":"7730337",
+        "celular":"3008357816",
+        "correo":"danivascruz@misena.edu.co"},
+    "ubicacion":{
+        "pais":"colombia",
+        "ciudad":"Bogota d.c",
+        "barrio":"santafe",
+        "direcion":"Tranversal 14l #96b-25sur"},
+    "info__financiera":{
+        "tipo_cuenta":"corriente",
+        "banco":"davivienda",
+        "numero":"123456789"}
+}
+{
+    "nombre":"concentrados SAS",
+    "rut":"12345618",
+    "rol":"proveedor",
+    "contacto":{
+        "telefono":"7730367",
+        "celular":"3008357845",
+        "correo":"concentados@gmail.com"},
+    "ubicacion":{
+        "pais":"colombia",
+        "ciudad":"Bogota d.c",
+        "barrio":"toberin",
+        "direcion":"Tranversal 34l #96b-25sur"},
+    "info__financiera":{
+        "tipo_cuenta":"ahorros",
+        "banco":"bancolombia",
+        "numero":"153456789"}
+}
+{
+    "nombre":"PETMEDICINAS SAS",
+    "rut":"12355618",
+    "rol":"proveedor",
+    "contacto":{
+        "telefono":"7830367",
+        "celular":"3028357845",
+        "correo":"medicinas@gmail.com"},
+    "ubicacion":{
+        "pais":"colombia",
+        "ciudad":"Bogota d.c",
+        "barrio":"bilvao",
+        "direcion":"Tranversal 34l #10b-25sur"},
+    "info__financiera":{
+        "tipo_cuenta":"ahorros",
+        "banco":"bogota",
+        "numero":"153556789"}
+}
+/*empleados *-**-*-*-*-*-*-*--**-*--**-*-*-*-*-*-**-*-*-*-*-*-*--**-*--**--**-*-*-*--*-*-*--*/
+{  
+        "nombre":"carlos abondano",
+        "contraseña":"1234",
+        "rol":"empleado",
+        "fecha_ingreso":"2015-04-05",
+        "contacto":{
+            "telefono":"7730428",
+            "celular":"3008357805",
+            "correo":"bondano@misena.edu.co"
+        }
+}
+{  
+        "nombre":"elizabeth vasquez",
+        "contraseña":"1234",
+        "rol":"empleado",
+        "fecha_ingreso":"2016-04-09",
+        "contacto":{
+            "telefono":"7730328",
+            "celular":"3008385696",
+            "correo":"elizavas@misena.edu.co"
+        }
+}
+{  
+        "nombre":"camila lopez",
+        "contraseña":"1234",
+        "rol":"empleado",
+        "fecha_ingreso":"2014-04-01",
+        "contacto":{
+            "telefono":"6310328",
+            "celular":"3008555696",
+            "correo":"camila@misena.edu.co"
+        }
+}
+/*administradores------------------------------------------------------------------------------------*/
+{  
+        "nombre":"cristian abondano",
+        "contraseña":"12345",
+        "rol":"administrador",
+        "fecha_ingreso":"2014-04-01",
+        "contacto":{
+            "telefono":"6310328",
+            "celular":"3008555696",
+            "correo":"abondano930719@gmail.com"
+        }
+}
+{  
+        "nombre":"santiago peña",
+        "contraseña":"123456",
+        "rol":"administrador",
+        "fecha_ingreso":"2014-04-20",
+        "contacto":{
+            "telefono":"6310377",
+            "celular":"3108555696",
+            "correo":"santi@gmail.com"
+        }
+}
+{  
+        "nombre":"julio quintero",
+        "contraseña":"123456",
+        "rol":"administrador",
+        "fecha_ingreso":"2013-04-20",
+        "contacto":{
+            "telefono":"6550377",
+            "celular":"3108698696",
+            "correo":"juli@gmail.com"
+        }
+}
+{  
+        "nombre":"david gonzalez",
+        "contraseña":"321456",
+        "rol":"administrador",
+        "fecha_ingreso":"2014-04-20",
+        "contacto":{
+            "telefono":"6555577",
+            "celular":"3108695696",
+            "correo":"davi@gmail.com"
+        }
+}
+{  
+        "nombre":"sebastian giraldo",
+        "contraseña":"123456",
+        "rol":"administrador",
+        "fecha_ingreso":"2020-04-20",
+        "contacto":{
+            "telefono":"6553377",
+            "celular":"302268696",
+            "correo":"sebas@gmail.com"
+        }
+}
+
+

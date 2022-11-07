@@ -3,11 +3,11 @@
 // forma convencional nodejs
 const express = require("express");
 const mongoose = require("mongoose");
-// otra forma de javascript
-// import express from "express"
+
 
 // Importar las variables de entorno
-require("dotenv").config({path:"var.env"})
+require("dotenv").config({path:"var.env"});
+
 // Para establecer las rutas de express
 const router = express.Router();
 
@@ -20,49 +20,40 @@ const cors = require('cors');
 // Inicializar express
 var app = express();
 
+//Manejo de JSON por parte  del body
+app.use(express.json());
+
 // Conectar con la BAse de Datos
 conectarDB();
-// -------------------------------------------------------------------------------------------------------------
-// Pruebas minimas de funcionamientp
-// app.use("/",function(req,res){
-//     res.send("Hola Tripulantes")
-// });
-// -------------------------------------------------------------------------------------------------------------
-// utilizando una funcion flecha
-// app.use("/", (req, res) => {
-//     res.send("Utilizando la funcion flecha...")
-// });
-// -------------------------------------------------------------------------------------------------------------
-// -------------------------------------------------------------------------------------------------------------
-// Para usar los metodos http
-// const router = express.Router(); => aagregada a la linea 10 antes de inicializar 
-// app.use(router);
-// router.get("/mesaje",function(req,res){
-//     res.send("Mensaje con Metodo GET")
 
-//     const name_db = "OmegaShopGroupU31G5"
-//     const user = "dast"
-//     const paswr = "dast123"
-//     const uri = `mongodb+srv://${user}:${paswr}@omegapetshopu31g05.b2v1ve4.mongodb.net/?retryWrites=true&w=majority`
-//     mongoose.connect(uri)
-//         .then(function(){
-//             console.log("Base de datos conectada")
-//         })
-//         .catch(function(e){console.log("Error:"+e)})
-// });
+// Para usar los metodos http 
+app.use(router);
 
-// router.post("/mesaje",function(req,res){
-//     res.send("Mensaje con Metodo POST");
-// });
+//Importar controladores
 
-// router.put("/mesaje",function(req,res){
-//     res.send("Mensaje con Metodo PUT")
-// });
+const controlProducto = require('./controllers/controlProducto');
+const controlUsuario = require('./controllers/controlUsuario');
 
-// router.delete("/mesaje",function(req,res){
-//     res.send("Mensaje con Metodo DELETE")
-// });
-// -------------------------------------------------------------------------------------------------------------
+
+//------------------------------------------------------------ EndPoints ------------------------------------------
+
+// PRODUCTO
+router.get('/producto', controlProducto.consultar);
+router.post('/producto/crear', controlProducto.crear);
+router.put('/producto/actualizar/:id', controlProducto.actualizar);
+router.delete('/producto/borrar/:id', controlProducto.eliminar);
+router.get('/producto/ctg/:categoria', controlProducto.findByCategory);
+
+//Usuarios
+router.get('/users', controlUsuario.consultar);
+router.get('/users/:id', controlUsuario.consultarByID);
+router.post('/users/crear', controlUsuario.crear);
+router.post('/users/crear/admin', controlUsuario.crearAdmin);
+router.put('/users/actualizar/:id', controlUsuario.actualizar);
+router.delete('/users/borrar/:id', controlUsuario.eliminar);
+router.get('/users/:rol',controlUsuario.findByRol);
+
+
 // Asignacion del puerto
 app.listen(process.env.PORT);
 

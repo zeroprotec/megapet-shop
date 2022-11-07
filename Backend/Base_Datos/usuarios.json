@@ -3,6 +3,7 @@
         "cedula":"1022988238",
         "contraseña":"1234",
         "rol":"cliente",
+        "info_financiera":["efectivo","pse"],
         "contacto":{
             "telefono":"7730328",
             "celular":"3008357805",
@@ -13,7 +14,7 @@
             "ciudad":"Bogota d.c",
             "barrio":"valles de cafam",
             "direcion":"Tranversal 14l #91b-05sur",
-            "info_financiera":["efectivo","pse"],
+            
             "fecha":"2015-04-05"
             
         }
@@ -23,6 +24,7 @@
     "cedula":"1022988239",
     "contraseña":"1234",
     "rol":"cliente",
+    "info_financiera":["efectivo","pse"],
     "contacto":{
         "telefono":"7730327",
         "celular":"3008357806",
@@ -33,7 +35,6 @@
         "ciudad":"Bogota d.c",
         "barrio":"porvenir",
         "direcion":"Tranversal 14l #96b-05sur",
-        "info_financiera":["efectivo","pse"],
         "fecha_ingreso":"2016-04-05"
         
     }
@@ -44,6 +45,7 @@
     "cedula":"1022988249",
     "contraseña":"1234",
     "rol":"cliente",
+    "info__financiera":["efectivo","pse"],
     "contacto":{
         "telefono":"7730337",
         "celular":"3008357816",
@@ -54,7 +56,6 @@
         "ciudad":"Bogota d.c",
         "barrio":"santafe",
         "direcion":"Tranversal 14l #96b-25sur",
-        "info__financiera":["efectivo","pse"],
         "fecha_ingreso":"2010-04-05"
         
     }
@@ -65,6 +66,7 @@
     "cedula":"1022988259",
     "contraseña":"1234",
     "rol":"cliente",
+    "info__financiera":["efectivo","pse"],
     "contacto":{
         "telefono":"7730367",
         "celular":"3008357836",
@@ -75,7 +77,6 @@
         "ciudad":"Bogota d.c",
         "barrio":"tenerife",
         "direcion":"Tranversal 14l #96b-55sur",
-        "info__financiera":["efectivo","pse"],
         "fecha_ingreso":"2011-04-05"
         
     }
@@ -86,6 +87,7 @@
     "cedula":"1022988279",
     "contraseña":"1234",
     "rol":"cliente",
+    "info__financiera":["efectivo","pse"],
     "contacto":{
         "telefono":"7730347",
         "celular":"3008357839",
@@ -96,7 +98,6 @@
         "ciudad":"Bogota d.c",
         "barrio":"monteblanco",
         "direcion":"Tranversal 15l #96b-25sur",
-        "info__financiera":["efectivo","pse"],
         "fecha_ingreso":"2013-04-05"
         
     }
@@ -107,6 +108,7 @@
     "cedula":"1022988269",
     "contraseña":"1234",
     "rol":"cliente",
+    "info__financiera":["efectivo","pse"],
     "contacto":{
         "telefono":"7730458",
         "celular":"3008357720",
@@ -117,9 +119,7 @@
         "ciudad":"Bogota d.c",
         "barrio":"marichuelo",
         "direcion":"Tranversal 25l #96b-25sur",
-        "info__financiera":["efectivo","pse"],
         "fecha_ingreso":"2015-04-05"
-        
     }
 
 }
@@ -132,22 +132,16 @@
     "contacto":{
         "telefono":"7730337",
         "celular":"3008357816",
-        "correo":"danivascruz@misena.edu.co"
-    },
+        "correo":"danivascruz@misena.edu.co"},
     "ubicacion":{
         "pais":"colombia",
         "ciudad":"Bogota d.c",
         "barrio":"santafe",
-        "direcion":"Tranversal 14l #96b-25sur",
-        
-          
-    },
+        "direcion":"Tranversal 14l #96b-25sur"},
     "info__financiera":{
         "tipo_cuenta":"corriente",
         "banco":"davivienda",
-        "numero":"123456789"
-    }
-
+        "numero":"123456789"}
 }
 {
     "nombre":"concentrados SAS",
@@ -156,22 +150,16 @@
     "contacto":{
         "telefono":"7730367",
         "celular":"3008357845",
-        "correo":"concentados@gmail.com"
-    },
+        "correo":"concentados@gmail.com"},
     "ubicacion":{
         "pais":"colombia",
         "ciudad":"Bogota d.c",
         "barrio":"toberin",
-        "direcion":"Tranversal 34l #96b-25sur",
-        
-          
-    },
+        "direcion":"Tranversal 34l #96b-25sur"},
     "info__financiera":{
         "tipo_cuenta":"ahorros",
         "banco":"bancolombia",
-        "numero":"153456789"
-    }
-
+        "numero":"153456789"}
 }
 {
     "nombre":"PETMEDICINAS SAS",
@@ -180,22 +168,16 @@
     "contacto":{
         "telefono":"7830367",
         "celular":"3028357845",
-        "correo":"medicinas@gmail.com"
-    },
+        "correo":"medicinas@gmail.com"},
     "ubicacion":{
         "pais":"colombia",
         "ciudad":"Bogota d.c",
         "barrio":"bilvao",
-        "direcion":"Tranversal 34l #10b-25sur",
-        
-          
-    },
+        "direcion":"Tranversal 34l #10b-25sur"},
     "info__financiera":{
         "tipo_cuenta":"ahorros",
         "banco":"bogota",
-        "numero":"153556789"
-    }
-
+        "numero":"153556789"}
 }
 /*empleados *-**-*-*-*-*-*-*--**-*--**-*-*-*-*-*-**-*-*-*-*-*-*--**-*--**--**-*-*-*--*-*-*--*/
 {  

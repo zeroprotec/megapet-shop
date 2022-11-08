@@ -22,4 +22,4 @@ const facturaSCH = new Schema({
     versionKey : false
 });
 
-module.exports =   model('Factura', facturaSCH);
+module.exports =   model('facturas', facturaSCH);

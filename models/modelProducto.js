@@ -22,4 +22,4 @@ const productosSCH = new Schema({
     versionKey : false
 });
 
-module.exports = model('Producto', productosSCH);
+module.exports = model('productos', productosSCH);

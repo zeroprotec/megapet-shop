@@ -29,4 +29,4 @@ const usuarioSCH = new Schema({
     versionKey : false
 });
 
-module.exports = model('Usuario', usuarioSCH);
+module.exports = model('usuarios', usuarioSCH);

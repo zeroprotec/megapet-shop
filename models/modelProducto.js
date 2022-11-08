@@ -1,23 +1,25 @@
 
-// importar mongoose
-const mongoose = require('mongoose');
+const {Schema , model} = require('mongoose');
 
-// establecer el schema del documento en la collection
-const productoSchema = mongoose.Schema({
-    id_prod : Number,
-    nombre_prod : String,
-    cant_stock_prod : Number,
-    precio_prod : {precio_compra:Number,
-        precio_venta:Number},
-    categoria_prod : {tipo_mascota:String,
-    tipo_producto:String},
-    imagen:String,
+const productosSCH = new Schema({
+
+    idProducto : Number,
+    nombre : String,
+    cantidad : Number, 
+    descripcion: String,
+    precio : {
+        costo : Number,
+        venta: Number
+    },
+    img : String,
+    categoria : {
+        tipoAnimal : String,
+        tipoProducto : String
+    },
+    estado: Boolean
 },
 {
     versionKey : false
 });
 
-
-// exportar 
-module.exports = mongoose.model('productos', productoSchema);
-
+module.exports = model('Producto', productosSCH);

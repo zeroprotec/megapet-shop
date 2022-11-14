@@ -33,12 +33,13 @@ app.use(router);
 
 const controlProducto = require('./controllers/controlProducto');
 const controlUsuario = require('./controllers/controlUsuario');
-
+const controlFactura = require('./controllers/controlFactura');
 
 //------------------------------------------------------------ EndPoints ------------------------------------------
 
 // PRODUCTO
 router.get('/producto', controlProducto.consultar);
+router.get('/producto/:id', controlProducto.consultarByID);
 router.post('/producto/crear', controlProducto.crear);
 router.put('/producto/actualizar/:id', controlProducto.actualizar);
 router.delete('/producto/borrar/:id', controlProducto.eliminar);
@@ -47,12 +48,19 @@ router.get('/producto/ctg/:categoria', controlProducto.findByCategory);
 //Usuarios
 router.get('/users', controlUsuario.consultar);
 router.get('/users/:id', controlUsuario.consultarByID);
+router.get('/users/rol/:rol',controlUsuario.findByRol);
 router.post('/users/crear', controlUsuario.crear);
-router.post('/users/crear/admin', controlUsuario.crearAdmin);
+router.post('/users/crear/admin', controlUsuario.crear);
 router.put('/users/actualizar/:id', controlUsuario.actualizar);
 router.delete('/users/borrar/:id', controlUsuario.eliminar);
-router.get('/users/:rol',controlUsuario.findByRol);
 
+
+//Factura
+router.get('/factura', controlFactura.consultar);
+router.get('/factura/:id', controlFactura.consultarByID);
+router.post('/factura/crear', controlFactura.crear);
+router.put('/factura/actualizar/:id', controlFactura.actualizar);
+router.delete('/factura/borrar/:id', controlFactura.eliminar);
 
 // Asignacion del puerto
 app.listen(process.env.PORT);

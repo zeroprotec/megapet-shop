@@ -20,6 +20,7 @@ exports.crear = async (req, res) => {
 };
 
                                                    // Método para consultar documentos                        
+//todos
 exports.consultar = async(req, res) => {
 
     try {
@@ -34,7 +35,21 @@ exports.consultar = async(req, res) => {
 
     }
 };
+//Por ObjectID
+exports.consultarByID = async(req, res) => {
 
+    try {
+        
+        const producto = await modelProductos.findById(req.params.id);
+        return res.json(producto);
+
+    } catch (error) {
+        
+        console.log("Error al gurdar datos: " + error);
+        return res.status(500).send("Error al consultar la BD")
+
+    }
+};
                                                     // Método para actualizar documentos                        
 exports.actualizar = async (req, res) => {
 

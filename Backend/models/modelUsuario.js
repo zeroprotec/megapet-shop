@@ -6,7 +6,10 @@ const usuarioSCH = new Schema({
     pwd : String,
     cedula: Number,
     rut: String,
-    rol: String,
+    rol: {
+            type: String,
+            default : 'cliente'        
+    },
     infoFinanciera:{
         banco: String,
         cuenta: Number,
@@ -18,7 +21,9 @@ const usuarioSCH = new Schema({
         ciudad: String,
         barrio: String
     },
-    fecha: [Date],
+    fecha: [{ 
+         type: Date,
+         default: Date.now }],
     facturas : [{
         type : Schema.Types.ObjectId,
         ref : 'Factura'

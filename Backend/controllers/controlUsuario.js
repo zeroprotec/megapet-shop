@@ -1,39 +1,40 @@
     const modelUsuarios = require('../models/modelUsuario');
     const bcrypt = require('bcrypt');
 
+
                         // ------------------------------ CRUD -------------------------------------
   
 // Método para crear nuevos documentos                        
 exports.crear = async (req, res) => {
 
     try {
+
+        const rol = req.body.rol;
         
-        let user;
-        user = new modelUsuarios(req.body);
-        await user.save();
-        return res.send(user);
 
-    } catch (error) {
+        if( rol.toLowerCase() == 'usuario'){
 
-        console.log("Error al gurdar datos: " + error);
-        return res.status(500).send("Error al guardar el producto");
+             let user;
+             user = new modelUsuarios(req.body);
+             user.pwd = await bcrypt.hash(req.body.pwd,10);
+            await user.save();
+            return res.send(user);
 
-    };
-};
-
-exports.crearAdmin = async (req, res) => {
-
-    try {
+        }
         
-        let  {
+        else if (rol.toLowerCase() == 'administrador'){
+            
+            let  {
                 nombre,
                 pwd,
                 rol = 'administrador',
-                cedula
+                cedula, 
         } = req.body;
 
         
-         pwd = await bcrypt.hash(pwd,10)
+        pwd = await bcrypt.hash(pwd,10)
+
+        
 
         const admin = new modelUsuarios ({ 
             nombre,
@@ -42,24 +43,36 @@ exports.crearAdmin = async (req, res) => {
             cedula
         });
 
+        admin.facturas = undefined;
+        admin.fecha = undefined;
 
         await admin.save();
         return res.send(admin);
 
+        }
     } catch (error) {
 
-        console.log("Error al guardar datos: " + error);
-        return res.status(500).send("Error al guardar el administrador");
+        console.log("Error al gurdar datos: " + error);
+        return res.status(500).send("Error al guardar el producto");
 
     };
 };
 
-//Método para consultar todos los usuarios
+
+//--------------------------------------------------- Método para consultar -------------------------------------------
+
+//todos los usuarios
 exports.consultar = async(req, res) => {
 
     try {
         
-        const user = await modelUsuarios.find();
+        let user = await modelUsuarios.find().populate('facturas', '_id total');
+        if (user.rol == "administrador"){
+            
+            const admin = user.select('-fecha -facturas');
+            console.log(admin);
+            res.json(admin);
+        }
         return res.json(user);
 
     } catch (error) {
@@ -70,12 +83,29 @@ exports.consultar = async(req, res) => {
     }
 };
 
+//Buscar por ID
 exports.consultarByID = async(req, res) => {
 
     try {
         
-        const user = await modelUsuarios.findById(req.params.id);
+        const user = await modelUsuarios.findById(req.params.id)
+        .populate('facturas', '_id total');
+    
+        const rol = user.rol.toLocaleLowerCase();
+        
+
+        // if (rol == "administrador"){
+            
+        //     //---------- arreglar select ------------------------------
+
+        //     // const admin = await modelUsuarios.findById(req.params.id)
+        //     // .populate('facturas', '_id total').select({fecha:0, facturas :0});
+            
+
+        //     return res.json(admin);
+        // }
         return res.json(user);
+        
 
     } catch (error) {
         
@@ -84,8 +114,31 @@ exports.consultarByID = async(req, res) => {
 
     }
 };
+//Busar por rol
+exports.findByRol = async (req, res) => {
 
-//Método para actualizar 
+    try {
+        
+        const user = await modelUsuarios.find({ "rol" : req.params.rol.toLowerCase()})
+        .select({nombre:1 , rol:1, facturas :1});
+  
+        if(!user){
+            
+           return res.status(400).json({ msg : "el usuario no existe"});
+        }
+
+        else{
+            return res.json(user);
+        };
+
+    } catch (error) {
+        
+        console.log("Error al encontrar datos: " + error);
+        res.status(500).send("No se pudo encontrar el producto por categoría");
+        
+    }
+};
+//------------------------------------------------------- Método para actualizar ------------------------------------------------------
 exports.actualizar = async (req, res) => {
 
     try {
@@ -112,7 +165,7 @@ exports.actualizar = async (req, res) => {
     };
 };
 
-//Método para eliminar 
+//--------------------------------- Método para eliminar  -------------------------------------
 exports.eliminar = async (req, res) => {
 
     try {
@@ -141,27 +194,5 @@ exports.eliminar = async (req, res) => {
     };
 };    
 
- //Método para buscar por rol
- exports.findByRol = async (req, res) => {
-
-    try {
-        
-        const user = await modelUsuarios.find({rol : req.params.rol})
-        .select({nombre:1 , rol:1, facturas :1, _id:0});
-  
-        if(!user){
-            
-           return res.status(400).json({ msg : "el usuario no existe"});
-        }
-
-        else{
-            return res.json(user);
-        };
-
-    } catch (error) {
-        
-        console.log("Error al encontrar datos: " + error);
-        res.status(500).send("No se pudo encontrar el producto por categoría");
-        
-    }
-};
+ 
+ 

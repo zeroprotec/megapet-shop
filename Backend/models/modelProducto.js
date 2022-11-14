@@ -8,7 +8,7 @@ const productosSCH = new Schema({
     descripcion: String,
     precio : {
         costo : Number,
-        venta: Number
+        venta : Number
     },
     img : String,
     categoria : {

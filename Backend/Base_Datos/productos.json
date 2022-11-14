@@ -1,0 +1,152 @@
+{
+    "id": 1,
+    "Nombre_producto": "doncan",
+    "tipo": "concentrado perro",
+    "Precio_venta": 25000,
+    "Cantidad": 30,
+    "categoria": "alimento",
+    "rut_proveedor":"12345618",
+    "imagen":"www.google.com"
+}
+    
+{
+    "id": 2,
+    "Nombre_producto": "doncat",
+    "tipo": "concentrado gato",
+    "Precio_venta": 25000,
+    "Cantidad": 30,
+    "categoria": "alimento",
+    "rut_proveedor":"12345618",
+    "imagen":"www.google.com"
+}
+{
+    "id": 3,
+    "Nombre_producto": "cookies pet",
+    "tipo": "golosinas perro",
+    "Precio_venta": 26000,
+    "Cantidad": 30,
+    "categoria": "alimento",
+    "rut_proveedor":"12345618",
+    "imagen":"www.google.com"
+}
+{
+    "id": 4,
+    "Nombre_producto": "doncan cachorro",
+    "tipo": "concentrado perro cachorro",
+    "Precio_venta": 31000,
+    "Cantidad": 30,
+    "categoria": "alimento",
+    "rut_proveedor":"12345618",
+    "imagen":"www.google.com"
+}
+{
+    "id": 5,
+    "Nombre_producto": "doncat cachorro",
+    "tipo": "concentrado gato minino",
+    "Precio_venta": 31000,
+    "Cantidad": 30,
+    "categoria": "alimento",
+    "rut_proveedor":"12345618",
+    "imagen":"www.google.com"
+}
+/*articulos /***************************************/
+{
+    "id": 6,
+    "Nombre_producto": "guacal",
+    "tipo": "tranporte mascotas",
+    "Precio_venta": 55000,
+    "Cantidad": 30,
+    "categoria": "prendas",
+    "rut_proveedor":"12345678",
+    "imagen":"www.google.com"
+}
+{
+    "id": 7,
+    "Nombre_producto": "collares perro",
+    "tipo": "seguridad mascotas",
+    "Precio_venta": 10000,
+    "Cantidad": 30,
+    "categoria": "prendas",
+    "rut_proveedor":"12345678",
+    "imagen":"www.google.com"
+}
+{
+    "id": 8,
+    "Nombre_producto": "collares gato",
+    "tipo": "seguridad mascotas",
+    "Precio_venta": 10000,
+    "Cantidad": 30,
+    "categoria": "prendas",
+    "rut_proveedor":"12345678",
+    "imagen":"www.google.com"
+}
+{
+    "id": 9,
+    "Nombre_producto": "huesitos",
+    "tipo": "juguetes",
+    "Precio_venta": 11000,
+    "Cantidad": 30,
+    "categoria": "prendas",
+    "rut_proveedor":"12345678",
+    "imagen":"www.google.com"
+}
+
+/*medicinas /////////////////////////////////////////////////////////////////////////////////////////////////*/
+{
+    "id": 10,
+    "Nombre_producto": "pulguin",
+    "tipo": "champo antipulgas",
+    "Precio_venta": 11000,
+    "Cantidad": 30,
+    "categoria": "medicina y bienestar",
+    "rut_proveedor":"12355618"
+}
+{
+    "id": 11,
+    "Nombre_producto": "dolorinpet",
+    "tipo": "anticeptico perro",
+    "Precio_venta": 15000,
+    "Cantidad": 30,
+    "categoria": "medicina y bienestar",
+    "rut_proveedor":"12355618"
+}
+{
+    "id": 12,
+    "Nombre_producto": "vendaspet",
+    "tipo": "venda",
+    "Precio_venta": 8000,
+    "Cantidad": 30,
+    "categoria": "medicina y bienestar",
+    "rut_proveedor":"12355618"
+}
+{
+    "id": 13,
+    "Nombre_producto": "vendaspet",
+    "tipo": "venda",
+    "Precio_venta": 8000,
+    "Cantidad": 30,
+    "categoria": "medicina y bienestar",
+    "rut_proveedor":"12355618"
+}
+{
+    "id": 14,
+    "Nombre_producto": "parasipet",
+    "tipo": "purgante",
+    "Precio_venta": 12000,
+    "Cantidad": 30,
+    "categoria": "medicina y bienestar",
+    "rut_proveedor":"12355618"
+}
+{
+    "id": 15,
+    "Nombre_producto": "locion perro",
+    "tipo": "locion",
+    "Precio_venta": 3000,
+    "Cantidad": 30,
+    "categoria": "medicina y bienestar",
+    "rut_proveedor":"12355618"
+}
+
+
+
+

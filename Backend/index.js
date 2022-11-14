@@ -50,7 +50,6 @@ router.get('/users', controlUsuario.consultar);
 router.get('/users/:id', controlUsuario.consultarByID);
 router.get('/users/rol/:rol',controlUsuario.findByRol);
 router.post('/users/crear', controlUsuario.crear);
-router.post('/users/crear/admin', controlUsuario.crear);
 router.put('/users/actualizar/:id', controlUsuario.actualizar);
 router.delete('/users/borrar/:id', controlUsuario.eliminar);
 

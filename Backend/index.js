@@ -40,6 +40,8 @@ var corsOptionsDelegate = function (req, callback) {
 // Conectar con la BAse de Datos
 conectarDB();
 
+app.use(express.static("public"));
+
 // Para usar los metodos http 
 app.use(router);
 

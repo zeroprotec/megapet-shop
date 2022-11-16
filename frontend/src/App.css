@@ -1,5 +1,16 @@
 .App {
   text-align: center;
+  margin: 20px 30px;
+}
+.contProd{
+  display:flex;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+.contObj{
+  display:flex;
+  justify-content: flex-start;
+  align-content: space-between;
 }
 
 .App-logo {

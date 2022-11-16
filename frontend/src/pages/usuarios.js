@@ -30,6 +30,8 @@ const UsuariosPages = () => {
 
                 {users.map(cadaUsers => {
                     return (
+                        <div className="contProd">
+                        <div className="contObj">
                         <div className="card" style={{ width: '18rem' }}>
                             <div className="card-body">
                                 <h4 className="card-title"> {cadaUsers.nombre}</h4>
@@ -38,6 +40,8 @@ const UsuariosPages = () => {
                                 <a href="/users" className="card-link"></a>
                                 <a href="/users" className="card-link"></a>
                             </div>
+                        </div>
+                        </div>
                         </div>
 
                     );

@@ -27,8 +27,8 @@ const IndexPages = () => {
 
             {producto.map(cadaProd => {
                 return (
-                   
-
+                    <div className="contProd">
+                    <div className="contObj">
                     <div className="card mb-3" style={{ maxWidth: 540 }}>
                         <div className="row g-0">
                             <div className="col-md-4">
@@ -48,6 +48,9 @@ const IndexPages = () => {
                             </div>
                         </div>
                     </div>
+                    </div>
+                    </div>
+
 
 
                 );

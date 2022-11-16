@@ -59,23 +59,23 @@ router.put('/producto/actualizar/:id', cors(corsOptionsDelegate), controlProduct
 router.delete('/producto/borrar/:id', cors(corsOptionsDelegate), controlProducto.eliminar);
 router.get('/producto/ctg/:categoria', cors(corsOptionsDelegate), controlProducto.findByCategory);
 
-//Usuarios
-<<<<<<< HEAD
-router.get('/users', cors(corsOptionsDelegate), controlUsuario.consultar);
-router.get('/users/:id', cors(corsOptionsDelegate), controlUsuario.consultarByID);
-router.get('/users/rol/:rol', cors(corsOptionsDelegate),controlUsuario.findByRol);
-router.post('/users/crear', cors(corsOptionsDelegate), controlUsuario.crear);
-router.post('/users/crear/admin', cors(corsOptionsDelegate), controlUsuario.crear);
-router.put('/users/actualizar/:id', cors(corsOptionsDelegate), controlUsuario.actualizar);
-router.delete('/users/borrar/:id', cors(corsOptionsDelegate), controlUsuario.eliminar);
-=======
-router.get('/users', controlUsuario.consultar);
-router.get('/users/:id', controlUsuario.consultarByID);
-router.get('/users/rol/:rol',controlUsuario.findByRol);
-router.post('/users/crear', controlUsuario.crear);
-router.put('/users/actualizar/:id', controlUsuario.actualizar);
-router.delete('/users/borrar/:id', controlUsuario.eliminar);
->>>>>>> c693ad3efc8b50561f477f396c00b8acd4321462
+// //Usuarios
+// <<<<<<< HEAD
+ router.get('/users', cors(corsOptionsDelegate), controlUsuario.consultar);
+ router.get('/users/:id', cors(corsOptionsDelegate), controlUsuario.consultarByID);
+ router.get('/users/rol/:rol', cors(corsOptionsDelegate),controlUsuario.findByRol);
+ router.post('/users/crear', cors(corsOptionsDelegate), controlUsuario.crear);
+ router.post('/users/crear/admin', cors(corsOptionsDelegate), controlUsuario.crear);
+ router.put('/users/actualizar/:id', cors(corsOptionsDelegate), controlUsuario.actualizar);
+ router.delete('/users/borrar/:id', cors(corsOptionsDelegate), controlUsuario.eliminar);
+// =======
+// router.get('/users', controlUsuario.consultar);
+// router.get('/users/:id', controlUsuario.consultarByID);
+// router.get('/users/rol/:rol',controlUsuario.findByRol);
+// router.post('/users/crear', controlUsuario.crear);
+// router.put('/users/actualizar/:id', controlUsuario.actualizar);
+// router.delete('/users/borrar/:id', controlUsuario.eliminar);
+//>>>>>>> c693ad3efc8b50561f477f396c00b8acd4321462
 
 
 //Factura

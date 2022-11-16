@@ -2,24 +2,26 @@ const {Schema , model} = require('mongoose');
 
 const facturaSCH = new Schema({
 
-    idFactura : Number,
-    
-    idUsuarios : {
+    idUsuario : {
         type : Schema.Types.ObjectId,
         ref : 'Usuario'
     },
-    idProductos : [{
-        type : Schema.Types.ObjectId,
-        ref : 'Producto'
+    productos : [{
+        id_Producto: {
+            type : Schema.Types.ObjectId,
+            ref : 'Producto'
+        },
+        cantidad : Number,
+        precioU: Number
     }],
-    tipoCompra :
-    //por terminar
-    precio : {
-    costo : Number,
-    estado: Boolean
+
+    tipoCompra : String,
+    
+    total: Number
 },
 {
     versionKey : false
 });
 
+//facturaSCH.virtual()
 module.exports =   model('Factura', facturaSCH);

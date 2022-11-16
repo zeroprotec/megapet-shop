@@ -4,7 +4,7 @@
 import { useState } from "react";
 import Menu from "../components/menu";
 
-const IndexPages = () => {
+const ProductosPages = () => {
 
     const [producto, setProducto] = useState([])
 

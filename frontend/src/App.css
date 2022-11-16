@@ -7,11 +7,10 @@
   flex-wrap: wrap;
   padding: 40px;
 }
-.contObj{
-  display:flex;
-  justify-content: flex-start;
-  align-content: space-between;
+.contProd2{
+  padding:40px
 }
+
 
 .App-logo {
   height: 40vmin;

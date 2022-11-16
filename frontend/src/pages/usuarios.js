@@ -7,15 +7,15 @@ import Menu from "../components/menu";
 
 const UsuariosPages = () => {
 
-     const [users, setUsuarios] = useState([])
+    const [users, setUsuarios] = useState([])
 
-     const cargarUsuarios = () => {
-         fetch('http://localhost:4000/users')
-             .then(res => res.json())
-             .then(todosUsers => setUsuarios(todosUsers));
-     }
+    const cargarUsuarios = () => {
+        fetch('http://localhost:4000/users')
+            .then(res => res.json())
+            .then(todosUsers => setUsuarios(todosUsers));
+    }
 
-     cargarUsuarios();
+    cargarUsuarios();
 
 
     return (
@@ -26,12 +26,12 @@ const UsuariosPages = () => {
                 Lista de Usuarios
             </h1>
             <hr />
+            <div className="contProd">
             <h2>
-
                 {users.map(cadaUsers => {
                     return (
-                        <div className="contProd">
-                        <div className="contObj">
+                        
+                        <div className="contProd2">
                         <div className="card" style={{ width: '18rem' }}>
                             <div className="card-body">
                                 <h4 className="card-title"> {cadaUsers.nombre}</h4>
@@ -42,14 +42,15 @@ const UsuariosPages = () => {
                             </div>
                         </div>
                         </div>
-                        </div>
+                        
 
                     );
                 })} 
             </h2>
             <hr /><br />
-
+            </div>
         </main>
+        
     );
 }
 export default UsuariosPages;

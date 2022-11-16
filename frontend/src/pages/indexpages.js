@@ -23,12 +23,12 @@ const IndexPages = () => {
             <h1>
                 Productos 
             </h1>
-            
+            <div className="contProd">
 
             {producto.map(cadaProd => {
                 return (
-                    <div className="contProd">
-                    <div className="contObj">
+                    
+                    <div className="contProd2">
                     <div className="card mb-3" style={{ maxWidth: 540 }}>
                         <div className="row g-0">
                             <div className="col-md-4">
@@ -40,7 +40,7 @@ const IndexPages = () => {
                                     <h3> $  {cadaProd.Precio_venta}</h3>
                                     <h6> Codigo : {cadaProd._id}</h6>
                                     <h6> Tipo : {cadaProd.tipo}</h6>
-                                    <h6> Rut Proveedores : {cadaProd.rut_proveedor}</h6>
+                                    <h6> categoria : {cadaProd.categoria}</h6>
                                     <h6> Disponibles : {cadaProd.cantidad}</h6>
                                     <p className="card-text"></p>
                                     <p className="card-text"><small className="text-muted">Imagen tomada de Google.com</small></p>
@@ -49,13 +49,13 @@ const IndexPages = () => {
                         </div>
                     </div>
                     </div>
-                    </div>
+                    
 
 
 
                 );
             })}
-
+            </div>
         </main>
     );
 }

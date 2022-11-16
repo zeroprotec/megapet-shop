@@ -23,11 +23,12 @@ const FacturasPages = () => {
                 Lista de Facturas
             </h1>
             <br />
+            <div className="contProd">
             <h2>
             {factura.map(cadaFactura => {
                     return (
-                        <div className="contProd">
-                        <div className="contObj">
+                        
+                        <div className="contProd2">
                         <div className="card" style={{ width: '18rem' }}>
                             <div className="card-body">
                                 <h4 className="card-title"> {cadaFactura._id}</h4>
@@ -39,13 +40,13 @@ const FacturasPages = () => {
                             </div>
                         </div>
                         </div>
-                        </div>
+                        
 
                     );
                 })} 
             </h2>
             <hr /><br />
-
+        </div>
         </main>
     );
 }

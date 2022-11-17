@@ -37,8 +37,8 @@ const ProductosPages = () => {
                             <div className="col-md-8">
                                 <div className="card-body">
                                     <h5 className="card-title">Nombre : {cadaProd.Nombre_producto}</h5>
-                                    <h3> $ venta {cadaProd.Precio_venta}</h3>
-                                    <h3>$ costo {cadaProd.Precio_costo}</h3>
+                                    <h3> $ venta {cadaProd.precio.venta}</h3>
+                                    <h3>$ costo {cadaProd.precio.costo}</h3>
                                     <h6> Codigo : {cadaProd._id}</h6>
                                     <h6> Tipo : {cadaProd.tipo}</h6>
                                     <h6> Rut Proveedores : {cadaProd.rut_proveedor}</h6>
